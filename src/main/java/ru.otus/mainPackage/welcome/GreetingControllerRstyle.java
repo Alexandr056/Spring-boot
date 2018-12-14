@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
-@Controller
+@RestController
 public class GreetingControllerRstyle {
     private static final Logger logger = LoggerFactory.getLogger(GreetingControllerRstyle.class);
 
