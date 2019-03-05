@@ -11,7 +11,6 @@ import ru.otus.mainPackage.configs.YamlProps;
 @RestController
 @SpringBootApplication
 @EnableConfigurationProperties(YamlProps.class)
-//@EnableAutoConfiguration - не увидит Preparation Component
 public class Demo {
 
     @RequestMapping("/")

@@ -4,11 +4,9 @@ logging:
   level:
     ROOT: INFO
 spring:
-  profiles:
-    active: prod
   application:
     admin:
-      enabled: TRUE
+      enabled: true
 management:
   endpoints:
     web:
@@ -16,3 +14,6 @@ management:
         include: info, health, beans
 
 message: "Test Props msg"
+
+messager:
+  message: "Hello from Messager"

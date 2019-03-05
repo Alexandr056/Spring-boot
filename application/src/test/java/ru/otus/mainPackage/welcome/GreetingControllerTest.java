@@ -28,8 +28,8 @@ public class GreetingControllerTest {
     @Autowired
     private TestRestTemplate testRestTemplate; //call remote REST services
 
-    //@SpyBean
-    @MockBean
+    @SpyBean
+    //@MockBean
     private GreetingControllerRstyle greetingControllerRstyle;
 
     @Test
@@ -51,8 +51,6 @@ public class GreetingControllerTest {
 
         ResponseEntity<Map> entity = this.testRestTemplate.getForEntity(
                 "http://localhost:" + this.port + "/hello/" + name, Map.class);
-
-
 
         assertEquals(HttpStatus.OK, entity.getStatusCode());
         assertNotNull(entity.getBody(), "body not null");
