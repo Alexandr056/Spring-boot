@@ -17,7 +17,7 @@ public class GreetingController {
 
     public GreetingController(Greeting greeting, YamlProps props) {
         this.greeting = greeting;
-        logger.info("ATTENTION! props.getMessage(): {}", props.getMessage());
+        logger.info("ATTENTION! strange message(): {}", props.getMessage().getUppMsgNumber());
     }
 
     //http://localhost:8082/hello?name=ddd

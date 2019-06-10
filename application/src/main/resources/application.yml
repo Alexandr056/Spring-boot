@@ -13,7 +13,7 @@ management:
       exposure:
         include: info, health, beans
 
-message: "Test Props msg"
+app.message: "Test Props msg_test"
 
 messager:
   message: "Hello from Messager"

@@ -2,16 +2,17 @@ package ru.otus.mainPackage.configs;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties
+@ConfigurationProperties("app")
 public class YamlProps {
 
-    private String message;
 
-    public String getMessage() {
+    private StringUpperNumber message;
+
+    public StringUpperNumber getMessage() {
         return message;
     }
 
-    public void setMessage(String message) {
+    public void setMessage(StringUpperNumber message) {
         this.message = message;
     }
 }
